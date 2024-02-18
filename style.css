@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(275, 100%, 97%);
+  background-image: url("./assets/images/background-pattern-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: white;
+  z-index: 2;
+  font-family: Work Sans;
+}
+
+.faq {
+  display: flex;
+  font-size: large;
+}
+
+.faq h1 {
+  margin-left: 20px;
+}
+
+.question {
+  margin-top: 30px;
+}
+
+.question h2 {
+  font-size: medium;
+  font-weight: 700;
+  color: hsl(292, 42%, 14%);
+}
+
+.question-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.question-head img {
+  width: 26px;
+  height: 26px;
+}
+
+.content {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-out;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 12px;
+}
+
+.question.active .content {
+  height: 100%;
+}
+
+.attribution {
+  font-family: Work Sans;
+  margin-top: 20px;
+  color: hsl(292, 16%, 49%);
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.attribution a {
+  color: hsl(292, 42%, 14%);
+  text-decoration: none;
+}
